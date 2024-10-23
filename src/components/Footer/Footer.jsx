@@ -49,10 +49,10 @@ export class Footer extends Component {
     </footer>
     <div className="text-white py-4 px-4 w-full text-center" id='CCG'>
         <ul className='flex flex-wrap justify-center gap-4'>
-            <li><a  className='underline'>Mentions légales</a></li>
-            <li><a  className='underline'>Conditions d'utilisation</a></li>
-            <li><a  className='underline'>Politique de confidentialité</a></li>
-            <li><a  className='underline'>Politique de cookies</a></li>
+            <li><a href="/" className='underline'>Mentions légales</a></li>
+            <li><a href="/" className='underline'>Conditions d'utilisation</a></li>
+            <li><a href="/" className='underline'>Politique de confidentialité</a></li>
+            <li><a href="/" className='underline'>Politique de cookies</a></li>
         </ul>
     </div>
 </div>
