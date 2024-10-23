@@ -14,13 +14,8 @@ const navigation = [
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
-const visit = (url) => {
-  window.location.href = url
-}
-const contact = () => {
-  visit('/contact');
 
-}
+
 
 export default function Navbar() {
   return (

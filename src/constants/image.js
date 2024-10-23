@@ -12,7 +12,7 @@ import bckgroundpresentation from "../assets/bckground-presentation.png"
 
 
 
-export default {
+const image =  {
     linkedin,
     btp,
     chrono,
@@ -23,3 +23,5 @@ export default {
     regle,
     bckgroundpresentation
 }
+
+export default image ; 
