@@ -1,0 +1,51 @@
+.containerpresentation {
+  position: relative;
+  width: 100%;
+  height: 76vh;
+  display: flex;
+  justify-content: center;
+  border: 10px solid white;
+}
+
+.left {
+  width: 50%;
+  height: 700px;
+  position: relative;
+  background-image: url('../../assets/solaire.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+}
+
+.right {
+  width: 50%;
+  height: 700px;
+  position: relative;
+  background-image: url('../../assets/house.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.text-zone {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 800px;
+  height: 400px;
+  transform: translate(-50%, -50%);
+  background-color: #2e9da6 ;
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.pzone{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 25px;
+}
