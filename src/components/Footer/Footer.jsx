@@ -1,8 +1,4 @@
 import React, { Component } from 'react'
-import { TbBrandGoogleMaps } from "react-icons/tb";
-import { CiMail } from "react-icons/ci";
-
-import { IoShareSocial } from "react-icons/io5";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaGlobe } from 'react-icons/fa';
 import images from "../../constants/image";
 import "./Footer.css";

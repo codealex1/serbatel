@@ -1,6 +1,5 @@
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton,  } from '@headlessui/react'
 import { Bars3Icon,  XMarkIcon } from '@heroicons/react/24/outline'
-import { FaPhone } from "react-icons/fa";
 import images from "../../constants/image";
 import './Navbar.css'
 

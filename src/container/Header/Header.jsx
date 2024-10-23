@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './Header.css';
-import images from "../../constants/image"
+
 
 
 export class Header extends Component {
