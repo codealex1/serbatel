@@ -7,6 +7,9 @@ import biglogo from "../assets/BIGLOGO.png"
 import slide from "../assets/slide1.jpg"
 import regle from "../assets/regle.png"
 import bckgroundpresentation from "../assets/bckground-presentation.png"
+import serbatel from "../assets/serbatel.png"
+import energie from "../assets/energie.png"
+import effage from "../assets/effage.png"
 
 
 
@@ -21,7 +24,10 @@ const image =  {
     biglogo,
     slide,
     regle,
-    bckgroundpresentation
+    bckgroundpresentation,
+    energie,
+    serbatel,
+    effage
 }
 
 export default image ; 

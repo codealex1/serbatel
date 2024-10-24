@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 .containerpresentation {
   position: relative;
   width: 100%;
@@ -5,11 +7,12 @@
   display: flex;
   justify-content: center;
   border: 10px solid white;
+  margin-bottom: 100px;
 }
 
 .left {
   width: 50%;
-  height: 700px;
+  height: 100vh; /* Make the image as tall as the viewport */
   position: relative;
   background-image: url('../../assets/solaire.jpg');
   background-size: cover;
@@ -20,25 +23,40 @@
 
 .right {
   width: 50%;
-  height: 700px;
+  height: 100vh; /* Make the image as tall as the viewport */
   position: relative;
   background-image: url('../../assets/house.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  
 }
 
 .text-zone {
+  margin-top: 100px;
+  
   position: absolute;
+  color: white;
   top: 50%;
   left: 50%;
-  width: 800px;
-  height: 400px;
+  width: 70%; /* Make the text zone 80% of the viewport width */
+  height: auto; /* Let the text zone height be determined by its content */
   transform: translate(-50%, -50%);
-  background-color: #2e9da6 ;
+  background-color: #6cbfc9  ;
   padding: 20px;
-  text-align: center;
+  font-family: Poppins;
+  font-size: 23px;
+}
+h1{
+  font-size: 32px;
+}
+
+h2{
   font-size: 25px;
+}
+
+.margin{
+  margin: 10px 10px 10px 10px;
 }
 
 .pzone{
@@ -47,5 +65,88 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
 }
+.phone-tablette{
+  display: none;
+  
+}
+
+.pc{
+  display: block;
+}
+
+@media (max-width: 1750px){
+  .text-zone{
+    width: 90%;
+  }
+}
+@media (max-width: 1040px){
+  .pc{
+    display: none;
+  }
+  .phone-tablette{
+    display: block;
+  }
+}
+
+/* Pour les écrans moyens (tablettes) */
+@media (max-width: 767px) {
+  .containerpresentation {
+    flex-direction: column; /* Les images s'empilent verticalement */
+    height: auto; /* Ajuste la hauteur pour s'adapter au contenu */
+  }
+
+  .left, .right {
+    width: 100%; /* Chaque image prend 100% de la largeur */
+    height: 300px; /* Ajuste la hauteur pour un meilleur affichage */
+  }
+
+  .text-zone {
+    width: 80%; /* Réduit la largeur du texte pour l'adapter */
+    font-size: 20px;
+    height: auto; /* Let the text zone height be determined by its content */
+  }
+
+  .pzone{
+    font-size: 20px;
+  }
+}
+
+/* Pour les écrans petits (mobiles) */
+@media (max-width: 480px) {
+  .left, .right {
+    height: 40vh; /* Make the image as tall as the viewport */
+    background-size: 100% 100vh; /* Make the image cover the entire viewport */
+
+  }
+  .en-moins{
+    display: none;
+  }
+  .en-plus{
+    display: block;
+  }
+
+  .text-zone {
+    margin-top: 0px;
+    font-size: 18px; /* Réduit la taille de la police pour les mobiles */
+    height: auto; /* Let the text zone height be determined by its content */
+    padding: 10px; /* Ajuste le padding pour les petits écrans */
+  }
+}
+
+@media (max-width: 360px) {
+  .left, .right {
+    height: 50vh; /* Make the image as tall as the viewport */
+    background-size: 100% 100vh; /* Make the image cover the entire viewport */
+
+  }
+
+  .text-zone {
+    margin-top: 0px;
+    font-size: 12px; /* Réduit la taille de la police pour les mobiles */
+    height: 90vh; /* Let the text zone height be determined by its content */
+    padding: 10px; /* Ajuste le padding pour les petits écrans */
+  }
+}
+

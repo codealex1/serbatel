@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.containerProjet{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15em;
+}
+
+.div-energie {
+    
+    width: 33%;
+    margin: 20px auto;
+    margin-left: 50px;
+    padding: 20px;
+   
+  }
+.div-energie-center{
+    justify-items: center;
+}
+.div-projet{
+    margin-left: 50px;
+    width: 33%; /* Largeur de l'élément */
+    margin: 0 auto; /* Centrer l'élément */
+    line-height: 1.5; /* Espacement entre les lignes */
+    word-wrap: break-word; 
+}
+.div-top{
+  text-align: left;
+  /* Position the .div-top at the top of the .div-projet */
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-bottom: 220px;
+  margin-left: 50px;
+}
+  
+.p_projet{
+    font-family: Poppins;
+}
+  
+  h1 {
+    font-size: 2.5em;
+    font-family: Oswald;
+  }
+  
+  .blue {
+    
+    color:#1173b6;
+  }
+  
+  p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 40px;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  strong {
+    font-weight: bold;
+  }
+  
+  .highlight {
+    color: #007bff; /* Blue highlight color */
+  }
+  
+  .quote {
+    font-style: italic;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-left: 5px solid #007bff; /* Blue border for quote */
+    padding-left: 15px;
+  }
+
+.div-serbatel-img{
+    
+    width: 33%;
+    height: max-content;
+}
+.img-serbatel{
+    height: 1000px;
+    width: 700px;
+}
+
+.effage{
+    margin-top: 50px;
+    margin-left: 70px;
+    width: 300px;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .containerProjet {
+      margin-top: 0px;
+      display: flex;
+      flex-direction: column; /* Stack elements vertically */
+    }
+  
+    .div-energie{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .div-projet {
+      width: 100%; /* Make each div occupy full width */
+    }
+  
+    .div-serbatel-img {
+      display: none; /* Hide the image on phone screens */
+    }
+  }
+
+@media(max-width:1130px){
+    .div-serbatel-img{
+        display: none;
+    }
+}
