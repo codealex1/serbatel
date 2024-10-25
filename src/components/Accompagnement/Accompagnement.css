@@ -123,9 +123,12 @@
   @media (max-width: 768px) {
     .text-zone-acc {
       margin-left: 80px;
-      width: 90px; /* Ajuste la largeur pour les écrans plus petits */
+      width: 70%; /* Ajuste la largeur pour les écrans plus petits */
       font-size: 17px; /* Réduit la taille de la police */
       padding: 15px; /* Ajuste le rembourrage */
+    }
+    .containerAcc{
+        margin-bottom: 1800px;
     }
   }
   
