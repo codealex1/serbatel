@@ -149,7 +149,9 @@ h2{
     padding: 10px; /* Ajuste le padding pour les petits écrans */
   }
   body{
-    width: 370px;
+    width: 430px; /* Make the body width equal to the viewport width */
+    overflow-x: hidden; /* Hide the horizontal scrollbar */
   }
+
 }
 
