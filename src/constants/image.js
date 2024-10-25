@@ -10,8 +10,8 @@ import bckgroundpresentation from "../assets/bckground-presentation.png"
 import serbatel from "../assets/serbatel.png"
 import energie from "../assets/energie.png"
 import effage from "../assets/effage.png"
-
-
+import pile from "../assets/pile.png"
+import batiment1 from "../assets/batiment1.png"
 
 
 
@@ -27,7 +27,9 @@ const image =  {
     bckgroundpresentation,
     energie,
     serbatel,
-    effage
+    effage,
+    pile,
+    batiment1
 }
 
 export default image ; 

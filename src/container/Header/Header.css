@@ -135,7 +135,7 @@ h2{
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 375px) {
   .left, .right {
     height: 50vh; /* Make the image as tall as the viewport */
     background-size: 100% 100vh; /* Make the image cover the entire viewport */
@@ -147,6 +147,9 @@ h2{
     font-size: 12px; /* Réduit la taille de la police pour les mobiles */
     height: 90vh; /* Let the text zone height be determined by its content */
     padding: 10px; /* Ajuste le padding pour les petits écrans */
+  }
+  body{
+    width: 375px;
   }
 }
 

@@ -2,7 +2,7 @@ import { createBrowserRouter , RouterProvider,  } from 'react-router-dom';
 import './App.css';
 
 import Home from './container/Home/Home';
-import Apropos from './components/Apropos/Apropos';
+import Apropos from './container/Apropos/Apropos';
 
 
 const router = createBrowserRouter([

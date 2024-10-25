@@ -1,0 +1,81 @@
+.containerPrestation{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 80px;
+    
+}
+.containerTextPresta{
+    width: 600px;
+    text-align: center;
+    margin-top: 30px;
+    font-family: Poppins;
+    
+}
+
+.containerVision{
+    background-color: #00b09b;
+    text-align: center;
+    width: 600px;
+    
+}
+
+.containerRealisation{
+    margin-top: 30px;
+    width: 600px;
+    font-family: Poppins;
+    text-align: center;
+    
+    
+}
+.white{
+    color: white;
+    align-items: center;
+    margin-top: 30px;
+    font-family: Poppins;
+}
+.pile{
+    width: 550px;
+}
+.realisation-center{
+    
+    display: flex; /* Utilise Flexbox pour centrer le contenu */
+    flex-direction: column; /* Aligne les éléments en colonne */
+    align-items: center; /* Centre horizontalement */
+    margin-top: 20px; 
+}
+
+.realisation-center img{
+    margin-bottom: 30px;
+}
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    
+    color: white;
+  }
+  
+  .item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    
+  }
+  
+  .icon-presta {
+    color: black;
+    font-size: 3em;
+    margin-right: 20px; }
+  
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  
