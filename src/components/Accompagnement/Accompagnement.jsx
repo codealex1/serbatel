@@ -7,7 +7,7 @@ export class Accompagnement extends Component {
   render() {
     return (
         <>
-        <div class="containerAcc">
+        <div class="containerAcc" data-aos="fade-left" data-aos-duration="3000">
         
             <div class="bck-img-acc"></div>
             <div class="text-zone-acc">

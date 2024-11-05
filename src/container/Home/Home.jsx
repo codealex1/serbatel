@@ -4,6 +4,7 @@ import Header from '../Header/Header'
 import Footer from '../../components/Footer/Footer'
 import Projet from '../../components/Projet/Projet'
 import Accompagnement from '../../components/Accompagnement/Accompagnement'
+import Garanti from '../../components/Garanti/Garanti'
 
 export class Home extends Component {
   render() {
@@ -13,6 +14,7 @@ export class Home extends Component {
             <Header/>
             <Projet/>
             <Accompagnement/>
+            <Garanti/>
             <Footer/>
         </div>
       

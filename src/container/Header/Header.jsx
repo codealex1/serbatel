@@ -14,8 +14,8 @@ export class Header extends Component {
 
           
 
-            <h1>Caroline Brunet  </h1>
-            <h2>Gérante de Serbatel</h2>
+            <h1 class="h1-pres">Caroline Brunet  </h1>
+            <h2 class="h2-pres">  Gérante de Serbatel</h2>
             <br />
             <p class='pc' >
             J’ai commencé ma carrière dans la téléphonie mobile, secteur en pleine expansion, chez

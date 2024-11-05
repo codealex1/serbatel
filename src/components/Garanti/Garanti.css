@@ -1,58 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-.containerAcc {
+.containerGaranti {
   position: relative;
   width: 100%;
   height: 200px;
   justify-content: center;
   border: 10px solid white;
-  margin-bottom: 770px;
+  margin-bottom: 800px;
   
 }
 
-.bck-img-acc {
+.bck-img-garanti {
   width: 100%;
   height: 500px; /* Make the image as tall as the viewport */
   position: relative;
-  background-image: url('../../assets/chantier.jpg');
+  background-image: url('../../assets/architecture.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: grayscale(100%);
-  margin-bottom: 60px;
+  
+  margin-bottom: 50px;
   
 }
 
 
 
-.text-zone-acc {
+.text-zone-garanti {
   margin-top: 100px;
   
   position: absolute;
   color: white;
-  top: 50%;
-  left: 50%;
-  width: 40%; /* Make the text zone 80% of the viewport width */
+  top: 30%;
+  left: 60%;
+  width: 30%; /* Make the text zone 80% of the viewport width */
   height: auto; /* Let the text zone height be determined by its content */
-  transform: translate(-90%, -10%);
+  transform: translate(-0%, -30%);
   background-color: #6cbfc9  ;
   padding: 20px;
   font-family: Poppins;
   font-size: 23px;
 }
-.h1-acc{
-  font-size: 42px;
+.h1-garanti{
+  font-size: 52px;
   font-family: Poppins;
 }
 
-.h2{
-  font-size: 25px;
+.h2-garanti{
+  font-size: 18px;
 }
 
 .margin{
   margin: 10px 10px 10px 10px;
 }
-.container-acc-projet {
+.container-acc-garanti {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -62,18 +62,21 @@
   
   .step {
     text-align: center;
-    width: 200px;
+    
+    width: 400px;
     font-family: Poppins;
     font-size: 24px;
   }
-  .p-acc{
+  .p-garanti{
     font-size: 17px;
+    text-align: left;
   }
   
-  .icon {
-    font-size: 3rem;
+  .icon-garanti {
+    font-size: 2rem;
     color: #6cbfc9;
     margin-bottom: 10px;
+    margin-right: 15px;
   }
   
   .icon-container {
@@ -91,10 +94,16 @@
     font-size: 1.2rem;
     margin-bottom: 20px;
   }
+.garanti-icon-center{
+    display: flex;
+    margin: 20px;
+
+}
+
   
   /* Media Queries */
   @media (max-width: 768px) {
-    .container-acc-projet {
+    .container-acc-garanti {
       flex-direction: column;
     }
     .step {
@@ -111,6 +120,7 @@
     }
     p {
       font-size: 1rem;
+      text-align: center;
     }
   }
 
@@ -122,29 +132,32 @@
   
   
   @media (max-width: 768px) {
-    .text-zone-acc {
-      margin-left: 80px;
-      width: 70%; /* Ajuste la largeur pour les écrans plus petits */
+    .text-zone-garanti {
+      left: 0%;
+      
+      width: 80%; /* Ajuste la largeur pour les écrans plus petits */
       font-size: 17px; /* Réduit la taille de la police */
       padding: 15px; /* Ajuste le rembourrage */
     }
-    .containerAcc{
+    .containerGaranti{
         margin-bottom: 1800px;
     }
   }
   
   @media (max-width: 480px) {
-    .text-zone-acc {
-      width: 350px; /* Ajuste la largeur pour les très petits écrans */
-      font-size: 10px; /* Réduit encore la taille de la police */
-      padding: 10px; /* Réduit le rembourrage */
-      margin-left: 130px;
+    .bck-img-garanti {
+      align-items: center;
+    
+      
       
     }
-    .h1-acc{
-        font-size: 20px;
+    .h1-garanti{
+        font-size: 22px;
     }
-    .containerAcc{
+    .h2-garanti{
+      font-size: 15px;
+    }
+    .containerGaranti{
         margin-bottom: 1800px;
     }
   }

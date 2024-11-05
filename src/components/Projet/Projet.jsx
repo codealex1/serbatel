@@ -8,8 +8,8 @@ export class Projet extends Component {
     return (
         <div class="containerProjet">
             <div class="div-energie">
-                <div class="div-energie-center">
-                    <img src={image.energie} alt="" />
+                <div class="div-energie-center" data-aos="fade-right">
+                    <img src={image.energie} alt="solaire" class="img-eng" />
                     <h1>Notre atout majeur :</h1>
                     <h1 class="blue">la pluridisciplinarité</h1>
                     <br />
@@ -35,7 +35,7 @@ export class Projet extends Component {
                 
             </div>
             <div class="div-projet">
-                <div class="div-top">
+                <div class="div-top" data-aos="fade-down">
                     <h1><strong>Un projet ?</strong></h1>
                     <br />
                     <p class="p_projet">Vous avez un projet à étudier, à réaliser ? <br />
@@ -64,7 +64,7 @@ export class Projet extends Component {
                 </div>
                 
             </div>
-            <div class="div-serbatel-img">
+            <div class="div-serbatel-img" data-aos="fade-left">
                 <img src={image.serbatel} alt='serbatel' class="img-serbatel" />
             </div>
         </div>
