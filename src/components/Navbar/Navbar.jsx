@@ -2,13 +2,13 @@ import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton,  } fro
 import { Bars3Icon,  XMarkIcon } from '@heroicons/react/24/outline'
 import images from "../../constants/image";
 import './Navbar.css'
-
+import React, { useState } from 'react';
 
 const navigation = [
   { name: 'Accueil', href: '/', current: true },
   { name: 'Projets', href: '#', current: false },
-  { name: 'À propos', href: '/a_propos', current: false },
-  { name: 'Contact', href: '/contact', current: false },
+  { name: 'À propos', href: '/', current: false },
+  { name: 'Contact',  href:'#target',current: false },
 ]
 
 function classNames(...classes) {
@@ -17,7 +17,15 @@ function classNames(...classes) {
 
 
 
+
 export default function Navbar() {
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleClick = () => {
+    setIsClicked(true);
+    // Redirige vers la page LinkedIn
+    window.location.href = 'https://www.linkedin.com/in/caroline-brunet-delbart/?originalSubdomain=fr';
+  };
   return (
     
     <>
@@ -33,7 +41,7 @@ export default function Navbar() {
               
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button */}
-                <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2  hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="absolute -inset-0.5" />
                   <span className="sr-only">Open main menu</span>
                   <Bars3Icon aria-hidden="true" className="block h-6 w-6 group-data-[open]:hidden" />
@@ -49,8 +57,9 @@ export default function Navbar() {
                         key={item.name}
                         href={item.href}
                         aria-current={item.current ? 'page' : undefined}
+                        class="itemnavbar"
                         className={classNames(
-                          item.current ? 'bg-gray-900 text-white' : 'bg-black text-white hover:bg-gray-700 hover:text-white',
+                          item.current ? ' text-white itemnavbar' : ' itemnavbar text-white hover:bg-gray-700 hover:text-white',
                           'rounded-md px-8 py-2 text-sm font-medium',
                         )}
                       >
@@ -68,12 +77,16 @@ export default function Navbar() {
                 <Menu as="div" className="relative ml-3">
                   <div>
                     <MenuButton className="relative flex rounded-full  text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                      <button onClick={handleClick} disabled={isClicked}>
+                      {isClicked}
                       <span className="absolute " />
                       <img
+                        
                         alt=""
                         src={images.linkedin}
                         className="h-8 w-8 rounded-full"
-                      />
+                      /></button>
+                      
                     </MenuButton>
                   </div>
                 </Menu>
@@ -90,7 +103,7 @@ export default function Navbar() {
                   href={item.href}
                   aria-current={item.current ? 'page' : undefined}
                   className={classNames(
-                    item.current ? 'bg-gray-900 text-white' : 'bg-black text-white hover:bg-gray-700 hover:text-white',
+                    item.current ? ' text-white' : 'bg-black text-white hover:bg-gray-700 hover:text-white',
                     'block rounded-md px-3 py-2 text-base font-medium',
                   )}
                 >

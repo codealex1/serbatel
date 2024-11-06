@@ -29,7 +29,7 @@ export class Garanti extends Component {
                 </div>
             </div>
             <div className="container-acc-garanti" data-aos="fade-left" data-aos-duration="1500" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                <div className="step">
+                <div className="step-ga">
                     <div className='garanti-icon-center'>
                         <VscWorkspaceTrusted className="icon-garanti" />
                         <h3>INTELOCUTEUR UNIQUE</h3>
@@ -41,7 +41,7 @@ export class Garanti extends Component {
                     l'avancement des travaux
                     </p>
                 </div>
-                <div className="step">
+                <div className="step-ga">
                     <div className='garanti-icon-center'>
                         <GrUserWorker className="icon-garanti" />
                         <h3>ARTISANS SÉLECTIONNÉS</h3>
@@ -55,7 +55,7 @@ export class Garanti extends Component {
                     des services proposés.
                     </p>
                 </div>
-                <div className="step">
+                <div className="step-ga">
                     <div className='garanti-icon-center'>
                         <FaMoneyBillTrendUp className="icon-garanti" />
                         <h3>GAIN TEMPS ET D'ARGENT</h3>

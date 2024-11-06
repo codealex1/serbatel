@@ -21,6 +21,8 @@ const router = createBrowserRouter([
 
 
 function App() {
+  
+
   useEffect(() => {
     AOS.init({
       // Vous pouvez ajouter vos options de configuration ici

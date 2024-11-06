@@ -7,7 +7,7 @@ export class Accompagnement extends Component {
   render() {
     return (
         <>
-        <div class="containerAcc" data-aos="fade-left" data-aos-duration="3000">
+        <div class="containerAcc" data-aos="fade-left" data-aos-duration="1500">
         
             <div class="bck-img-acc"></div>
             <div class="text-zone-acc">
@@ -19,8 +19,8 @@ export class Accompagnement extends Component {
                 </div>
             </div>
             <div className="container-acc-projet">
-                <div className="step">
-                    <FaStar className="icon" />
+                <div className="step-acc">
+                    <FaStar className="icon-acc" />
                     <h3>ETAPE 1</h3>
                     <p class="p-acc">
                     Définition de vos besoins à la suite d'une visite technique. Puis, nous
@@ -28,24 +28,24 @@ export class Accompagnement extends Component {
                     détaillée.
                     </p>
                 </div>
-                <div className="step">
-                    <FaLayerGroup className="icon" />
+                <div className="step-acc">
+                    <FaLayerGroup className="icon-acc" />
                     <h3>ETAPE 2</h3>
                     <p class="p-acc">
                     Elaboration des plans. Nous définission les plans en fonction de vos
                     besoins et des éventuellement contraintes du projet.
                     </p>
                 </div>
-                <div className="step">
-                    <FaUsers className="icon" />
+                <div className="step-acc">
+                    <FaUsers className="icon-acc" />
                     <h3>ETAPE 3</h3>
                     <p class="p-acc">
                     Recherche d'artisans électriciens, plaquistes, maçons, plombiers,..)
                     parmi notre réseau de professionnels.
                     </p>
                 </div>
-                <div className="step">
-                    <FaCog className="icon" />
+                <div className="step-acc">
+                    <FaCog className="icon-acc" />
                     <h3>ETAPE 4</h3>
                     <p class="p-acc">
                     Suivi des travaux dans le respect du budget et du délai. Nous vous

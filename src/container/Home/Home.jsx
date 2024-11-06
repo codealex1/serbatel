@@ -5,6 +5,7 @@ import Footer from '../../components/Footer/Footer'
 import Projet from '../../components/Projet/Projet'
 import Accompagnement from '../../components/Accompagnement/Accompagnement'
 import Garanti from '../../components/Garanti/Garanti'
+import ContactForm from '../../components/Contact/Contact'
 
 export class Home extends Component {
   render() {
@@ -15,7 +16,9 @@ export class Home extends Component {
             <Projet/>
             <Accompagnement/>
             <Garanti/>
+            <ContactForm/>
             <Footer/>
+
         </div>
       
     )
